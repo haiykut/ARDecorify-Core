@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>io.github.haiykut</groupId>
 	<artifactId>ardecorifycore</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>ardecorifycore</name>
 	<packaging>jar</packaging>
 	<description>Core Project for ARDecorify</description>
@@ -132,10 +132,6 @@
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-impl</artifactId>
 			<version>0.12.5</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
