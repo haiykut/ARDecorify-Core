@@ -13,6 +13,8 @@
 	<version>1.0.0</version>
 	<name>ardecorifycore</name>
 	<packaging>jar</packaging>
+	<description>Core Project for ARDecorify</description>
+	<url>https://github.com/haiykut/ardecorify-core</url>
 	<build>
 		<plugins>
 			<plugin>
@@ -93,28 +95,21 @@
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
-<!--	https://github.com/haiykut/ARDecorify-Core-->
-<!--	https://github.com/haiykut/ARDecorify-Core.git-->
 	<scm>
-		<connection>scm:git:git://github.com/haiykut/ARDecorify-Core.git</connection>
-		<developerConnection>scm:git:ssh://github.com/haiykut/ARDecorify-Core.git</developerConnection>
-		<url>http://github.com/haiykut/ARDecorify-Core</url>
+		<connection>scm:git:git://github.com/haiykut/ardecorify-core.git</connection>
+		<developerConnection>scm:git:ssh://github.com/haiykut/ardecorify-core.git</developerConnection>
+		<url>http://github.com/haiykut/ardecorify-core</url>
 	</scm>
 	<developers>
 		<developer>
 			<name>Halilibrahim Aykut</name>
 			<email>haiykut@gmail.com</email>
 			<organization>io.github.haiykut</organization>
-			<organizationUrl>http://github.com/haiykut/ARDecorify-Core</organizationUrl>
+			<organizationUrl>http://github.com/haiykut/ardecorify-core</organizationUrl>
 		</developer>
 	</developers>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
-		<java.version>17</java.version>
-		<spring-cloud.version>2023.0.1</spring-cloud.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -139,24 +134,9 @@
 			<version>0.12.5</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-jackson</artifactId>
 			<version>0.12.5</version>
 		</dependency>
 	</dependencies>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 </project>

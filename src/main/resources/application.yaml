@@ -1,9 +1,7 @@
 spring:
   application:
     name: ardecorifycore
-  cloud:
-    config:
-      profile: local
-  config:
-    import: "configserver:${configUrl}"
-configUrl: http://localhost:8079
+jwt:
+  secret:
+    key: ${JWT_SECRET_KEY}
+  expiration: ${JWT_EXPIRATION_TIME}
